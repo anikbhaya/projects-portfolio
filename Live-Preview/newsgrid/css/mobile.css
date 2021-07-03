@@ -1,0 +1,41 @@
+#main-nav .container{
+    grid-template-columns: repeat(2, 1fr);
+}
+
+#main-nav .container .social-icons{
+    justify-self: end
+}
+
+#main-nav .container > ul{
+    grid-column: 1/span 2;
+    justify-self: center;
+}
+
+
+#articles .articles-container{
+    display: block
+  }
+
+  #articles .articles-container .card{
+    margin-bottom: 1rem;
+  }
+
+
+  #footer .footer-sections{
+      display: block;
+  }
+
+  #footer .footer-sections > div{
+      margin: 2rem;
+      border-bottom: 1px solid rgb(83, 83, 83);
+  }
+
+
+  #about .container{
+    display: block;
+  }
+
+  #about .container > div{
+      margin: 1rem 0;
+  }
+

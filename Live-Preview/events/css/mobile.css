@@ -1,0 +1,43 @@
+#header .navbar ul{
+    display: none;
+}
+
+.men-overlay{
+    display: none;
+}
+
+#header .navbar{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    align-items: center;
+}
+
+
+#join{
+    padding-top: 0;
+}
+
+#join .container{
+    display: block;
+}
+
+.sponsor{
+    display: none;
+}
+
+#why-join .container{
+    display: block
+}
+
+.speakers-container{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+}
+
+#ticket .pricing-table{
+    display: block;
+}
+
+.package{
+    margin-top: 3rem
+}

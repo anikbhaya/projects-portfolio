@@ -1,0 +1,146 @@
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body{
+    font-family: 'Montserrat', sans-serif;
+    background: #1d1d1b;
+}
+
+a{
+    text-decoration: none;
+    color: #1d1d1b;
+}
+
+a,p{
+    font-size: 1rem;
+}
+
+.container{
+    max-width: 1200px;
+    margin: auto;
+    padding: 0 2rem ;
+}
+
+img{
+    width: 100%;
+}
+
+
+/* Header */
+
+header {
+    background: #2e2e2b;
+    position: fixed;
+    width: 100%;
+    z-index: 999;
+}
+
+header nav{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: .8rem 0;
+}
+
+header nav > a{
+    color: #fff;
+    padding: .5rem;
+    transition: all .3s ease-in;
+}
+
+header nav > a:hover{
+    background-color: rgba(255, 255, 255, 0.24);
+}
+
+.logo img{
+    width: 150px;
+}
+
+
+/* Projects */
+
+#projects{
+    padding-top: 6rem;
+}
+
+.ind-prj{
+    background: #f3f3f3;
+    padding: 1rem;
+}
+
+#projects .container{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-gap: 2rem;
+}
+
+#projects h3{
+    text-align: center;
+    padding-top: 1rem;
+}
+
+
+.prj-img{
+    width: 100%;
+    height: 400px;
+    background: red;
+    position: relative;
+    transition: all 1.6s ease-in;
+    box-shadow: 0px 0px 20px #1d1d1b77 ;
+}
+
+
+.prj-img:hover{
+    background-position: bottom!important;
+}
+
+.overlay{
+    position: absolute;
+    top: 0;
+    left: 0;
+    background: #424240;
+    width: 100%;
+    height: 100%;
+    transition: all 1s ease-in;
+    opacity: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.overlay:hover{
+    opacity: .8;
+}
+
+.prj-img:hover{
+    cursor: pointer;
+
+}
+
+.text{
+    position: relative;
+    opacity: 1;
+    color: #fff
+}
+
+@media screen and (max-width: 660px){
+    #projects .container{
+        grid-template-columns: repeat(1, 1fr);
+    }
+}
+
+@media screen and (max-width: 500px){
+    header nav{
+        display: flex;
+        flex-direction: column;
+    }
+
+    header nav > a{
+        font-size: .7rem;
+    }
+}
+
+
