@@ -63,7 +63,7 @@ header nav > a:hover{
 /* Projects */
 
 #projects{
-    padding-top: 6rem;
+    padding-top: 7rem;
     margin-bottom: 3rem;
 }
 
@@ -127,9 +127,49 @@ header nav > a:hover{
     color: #fff
 }
 
+.used-lan{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin-top: 1rem;
+}
+
+.lan{
+    display: inline-block;
+    background-color: aqua;
+    margin: 5px 3px;
+    padding: 4px 8px;
+    border-radius: 5px;
+    font-weight: bold;
+    font-size: .7rem;
+}
+
+.used-lan .html{
+    background: linear-gradient(45deg,#ff193f,#ff35b4);
+    color: #fff;
+}
+.used-lan .css{
+    background: linear-gradient(45deg,#264de4,#2965f1);
+    color: #fff;
+}
+.used-lan .bootstrap{
+    background: linear-gradient(45deg,#6f11f4,#8913fc);
+    color: #fff;
+}
+
+
+
+
+
+
+
+
 @media screen and (max-width: 660px){
     #projects .container{
         grid-template-columns: repeat(1, 1fr);
+    }
+    .prj-img{
+        height: 320px;
     }
 }
 
